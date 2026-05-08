@@ -1,0 +1,146 @@
+[
+  {
+    "file": "hero-old-street.jpg",
+    "path": "/sanyue-assets/hero-old-street.jpg",
+    "size": "1828x1026",
+    "description": "Hero: 旧城街道与斜楼"
+  },
+  {
+    "file": "hero-umbrella-rain.jpg",
+    "path": "/sanyue-assets/hero-umbrella-rain.jpg",
+    "size": "1828x1026",
+    "description": "雨伞与雨夜宿舍入口"
+  },
+  {
+    "file": "mask-mechanic.png",
+    "path": "/sanyue-assets/mask-mechanic.png",
+    "size": "1166x398",
+    "description": "雨伞遮罩机制对照图"
+  },
+  {
+    "file": "mask-design-board.jpg",
+    "path": "/sanyue-assets/mask-design-board.jpg",
+    "size": "1032x675",
+    "description": "雨伞玩法草图"
+  },
+  {
+    "file": "room-interior.png",
+    "path": "/sanyue-assets/room-interior.png",
+    "size": "1114x640",
+    "description": "老屋室内场景"
+  },
+  {
+    "file": "room-editor-view.png",
+    "path": "/sanyue-assets/room-editor-view.png",
+    "size": "1269x701",
+    "description": "Unity室内场景编辑视图"
+  },
+  {
+    "file": "tape-screen.png",
+    "path": "/sanyue-assets/tape-screen.png",
+    "size": "1097x617",
+    "description": "磁带/电视线索界面"
+  },
+  {
+    "file": "memory-log.png",
+    "path": "/sanyue-assets/memory-log.png",
+    "size": "881x847",
+    "description": "回忆日志界面"
+  },
+  {
+    "file": "hospital-scene.png",
+    "path": "/sanyue-assets/hospital-scene.png",
+    "size": "1100x614",
+    "description": "病房记忆场景"
+  },
+  {
+    "file": "old-building-illustration.png",
+    "path": "/sanyue-assets/old-building-illustration.png",
+    "size": "1094x774",
+    "description": "倾斜居民楼手绘场景"
+  },
+  {
+    "file": "rpg-playable.png",
+    "path": "/sanyue-assets/rpg-playable.png",
+    "size": "917x298",
+    "description": "支线像素RPG玩法"
+  },
+  {
+    "file": "rpg-map.png",
+    "path": "/sanyue-assets/rpg-map.png",
+    "size": "776x530",
+    "description": "支线像素RPG地图"
+  },
+  {
+    "file": "rpg-layout-notes.png",
+    "path": "/sanyue-assets/rpg-layout-notes.png",
+    "size": "1027x351",
+    "description": "支线任务草图"
+  },
+  {
+    "file": "character-concepts.jpg",
+    "path": "/sanyue-assets/character-concepts.jpg",
+    "size": "1267x647",
+    "description": "角色与幽灵概念图"
+  },
+  {
+    "file": "sprite-sheet.png",
+    "path": "/sanyue-assets/sprite-sheet.png",
+    "size": "313x351",
+    "description": "主角像素/动画序列"
+  },
+  {
+    "file": "level-map.png",
+    "path": "/sanyue-assets/level-map.png",
+    "size": "908x603",
+    "description": "游戏总场景与路线图"
+  },
+  {
+    "file": "ui-return-screen.jpg",
+    "path": "/sanyue-assets/ui-return-screen.jpg",
+    "size": "1828x1026",
+    "description": "操作说明/返回界面"
+  },
+  {
+    "file": "dialogue-scene.jpg",
+    "path": "/sanyue-assets/dialogue-scene.jpg",
+    "size": "1828x1026",
+    "description": "旧城对话场景"
+  },
+  {
+    "file": "puzzle-lock.jpg",
+    "path": "/sanyue-assets/puzzle-lock.jpg",
+    "size": "1828x1026",
+    "description": "密码锁谜题界面"
+  },
+  {
+    "file": "rain-entrance.jpg",
+    "path": "/sanyue-assets/rain-entrance.jpg",
+    "size": "1828x1026",
+    "description": "雨夜入口探索"
+  },
+  {
+    "file": "memory-text.jpg",
+    "path": "/sanyue-assets/memory-text.jpg",
+    "size": "1828x1026",
+    "description": "记忆文本界面"
+  },
+  {
+    "file": "pickup-note.jpg",
+    "path": "/sanyue-assets/pickup-note.jpg",
+    "size": "1828x1026",
+    "description": "拾取纸条交互"
+  },
+  {
+    "file": "tape-closeup.jpg",
+    "path": "/sanyue-assets/tape-closeup.jpg",
+    "size": "1828x1026",
+    "description": "磁带近景"
+  },
+  {
+    "file": "old-room-diary.jpg",
+    "path": "/sanyue-assets/old-room-diary.jpg",
+    "size": "1828x1026",
+    "description": "老屋日记界面"
+  }
+]

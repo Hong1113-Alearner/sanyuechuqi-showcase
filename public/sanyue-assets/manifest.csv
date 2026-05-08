@@ -1,0 +1,25 @@
+﻿file,path,size,description
+hero-old-street.jpg,/sanyue-assets/hero-old-street.jpg,1828x1026,Hero: 旧城街道与斜楼
+hero-umbrella-rain.jpg,/sanyue-assets/hero-umbrella-rain.jpg,1828x1026,雨伞与雨夜宿舍入口
+mask-mechanic.png,/sanyue-assets/mask-mechanic.png,1166x398,雨伞遮罩机制对照图
+mask-design-board.jpg,/sanyue-assets/mask-design-board.jpg,1032x675,雨伞玩法草图
+room-interior.png,/sanyue-assets/room-interior.png,1114x640,老屋室内场景
+room-editor-view.png,/sanyue-assets/room-editor-view.png,1269x701,Unity室内场景编辑视图
+tape-screen.png,/sanyue-assets/tape-screen.png,1097x617,磁带/电视线索界面
+memory-log.png,/sanyue-assets/memory-log.png,881x847,回忆日志界面
+hospital-scene.png,/sanyue-assets/hospital-scene.png,1100x614,病房记忆场景
+old-building-illustration.png,/sanyue-assets/old-building-illustration.png,1094x774,倾斜居民楼手绘场景
+rpg-playable.png,/sanyue-assets/rpg-playable.png,917x298,支线像素RPG玩法
+rpg-map.png,/sanyue-assets/rpg-map.png,776x530,支线像素RPG地图
+rpg-layout-notes.png,/sanyue-assets/rpg-layout-notes.png,1027x351,支线任务草图
+character-concepts.jpg,/sanyue-assets/character-concepts.jpg,1267x647,角色与幽灵概念图
+sprite-sheet.png,/sanyue-assets/sprite-sheet.png,313x351,主角像素/动画序列
+level-map.png,/sanyue-assets/level-map.png,908x603,游戏总场景与路线图
+ui-return-screen.jpg,/sanyue-assets/ui-return-screen.jpg,1828x1026,操作说明/返回界面
+dialogue-scene.jpg,/sanyue-assets/dialogue-scene.jpg,1828x1026,旧城对话场景
+puzzle-lock.jpg,/sanyue-assets/puzzle-lock.jpg,1828x1026,密码锁谜题界面
+rain-entrance.jpg,/sanyue-assets/rain-entrance.jpg,1828x1026,雨夜入口探索
+memory-text.jpg,/sanyue-assets/memory-text.jpg,1828x1026,记忆文本界面
+pickup-note.jpg,/sanyue-assets/pickup-note.jpg,1828x1026,拾取纸条交互
+tape-closeup.jpg,/sanyue-assets/tape-closeup.jpg,1828x1026,磁带近景
+old-room-diary.jpg,/sanyue-assets/old-room-diary.jpg,1828x1026,老屋日记界面
