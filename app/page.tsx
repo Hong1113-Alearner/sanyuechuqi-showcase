@@ -232,10 +232,10 @@ function FadeIn({
   const reduceMotion = useReducedMotion();
   return (
     <motion.div
-      initial={reduceMotion ? false : { opacity: 0, y: 34, filter: "blur(12px)" }}
+      initial={false}
       whileInView={reduceMotion ? undefined : { opacity: 1, y: 0, filter: "blur(0px)" }}
-      viewport={{ once: true, margin: "-110px" }}
-      transition={{ duration: 1, delay, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.85, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
@@ -332,9 +332,9 @@ function FloatingNav() {
 
   return (
     <motion.nav
-      initial={{ opacity: 0, y: -16 }}
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.9, delay: 0.4 }}
+      transition={{ duration: 0.9, delay: 0.2 }}
       className="fixed left-1/2 top-5 z-50 hidden -translate-x-1/2 rounded-full border border-[#f7efd8]/60 bg-[#eef0e3]/55 px-3 py-2 text-xs text-[#4a5545] shadow-[0_24px_90px_rgba(56,66,50,0.12)] backdrop-blur-xl md:block"
     >
       <div className="flex items-center gap-1">
@@ -400,12 +400,15 @@ function Hero() {
   const { scrollYProgress } = useScroll();
   const yImage = useTransform(scrollYProgress, [0, 0.28], [0, 150]);
   const yTitle = useTransform(scrollYProgress, [0, 0.24], [0, 92]);
-  const opacity = useTransform(scrollYProgress, [0, 0.22], [1, 0.2]);
+  // Keep hero text always visible in production deployment.
+  // Earlier versions bound hero opacity to scroll progress; on some deployed/hydrated pages
+  // this could make the first screen look incomplete.
+  const opacity = 1;
 
   return (
     <section id="hero" className="relative z-10 flex min-h-screen items-center overflow-hidden px-5 py-24 sm:px-8 lg:px-10">
       <motion.div style={{ y: yImage }} className="absolute inset-0 z-0">
-        <img src={ASSETS.heroOldStreet} alt="《三月初七》旧城街道游戏截图" className="h-full w-full object-cover opacity-48" />
+        <img src={ASSETS.heroOldStreet} alt="《三月初七》旧城街道游戏截图" className="h-full w-full object-cover opacity-50" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(229,234,221,0.96)_0%,rgba(229,234,221,0.72)_38%,rgba(229,234,221,0.30)_72%,rgba(229,234,221,0.72)_100%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(229,234,221,0.50)_0%,rgba(229,234,221,0.05)_45%,rgba(38,48,39,0.34)_100%)]" />
       </motion.div>
@@ -419,27 +422,27 @@ function Hero() {
 
       <motion.div style={{ y: yTitle, opacity }} className="relative z-20 mx-auto w-full max-w-7xl">
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
           className="mb-8 text-xs uppercase tracking-[0.62em] text-[#68745d]"
         >
           Qingming · Indie Game · Digital Exhibition
         </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0, y: 34, filter: "blur(16px)" }}
+          initial={false}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 1.35, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1.1, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif text-[18vw] font-light leading-none tracking-[0.18em] text-[#263027] sm:text-[12vw] lg:text-[8rem]"
         >
           三月初七
         </motion.h1>
 
         <motion.div
-          initial={{ opacity: 0, y: 28 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.1, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.95, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
           className="mt-10 grid max-w-6xl gap-7 lg:grid-cols-[1.1fr_0.9fr] lg:items-end"
         >
           <p className="font-serif text-2xl font-light leading-[1.9] tracking-[0.16em] text-[#303a2f] sm:text-4xl">
@@ -454,9 +457,9 @@ function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={false}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-16 flex items-center gap-4 text-xs uppercase tracking-[0.36em] text-[#6e7a63]"
         >
           <span className="h-px w-14 bg-[#6e7a63]/50" />
@@ -561,7 +564,7 @@ function Mechanics() {
           <div className="relative min-h-[640px] overflow-hidden rounded-[2.6rem] border border-[#f7efd8]/60 bg-[#263027] p-5 shadow-[0_42px_130px_rgba(38,48,39,0.28)]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_35%_20%,rgba(247,239,216,0.18),transparent_30%),linear-gradient(180deg,rgba(80,94,72,0.62),rgba(18,23,19,0.96))]" />
 
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={active.id}
                 initial={{ opacity: 0, y: 28, filter: "blur(14px)" }}
