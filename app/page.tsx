@@ -470,6 +470,45 @@ function Hero() {
   );
 }
 
+function TrailerSection() {
+  return (
+    <Section id="trailer" className="max-w-6xl">
+      <SectionHeader
+        eyebrow="00 · Game Trailer"
+        title="一场关于清明、记忆与告别的短暂旅程"
+        desc="这段视频展示了《三月初七》的整体视觉氛围、横版探索流程、雨伞遮罩机制与情感叙事体验。"
+        center
+      />
+
+      <FadeIn>
+        <div className="relative overflow-hidden rounded-[2.5rem] border border-[#f7f0dd]/70 bg-[#eef1e5]/45 p-3 shadow-[0_40px_120px_rgba(56,66,50,0.18)] backdrop-blur-xl">
+          <div className="aspect-video overflow-hidden rounded-[2rem] bg-black">
+            <iframe
+              className="h-full w-full"
+              src="https://player.bilibili.com/player.html?isOutside=true&bvid=BV1pmduBqEsT&p=1"
+              title="《三月初七》游戏简介视频"
+              allow="fullscreen; autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
+          <div className="mt-4 flex flex-col gap-3 text-center text-sm text-[#6d705f] sm:flex-row sm:items-center sm:justify-between sm:text-left">
+            <span>若视频无法加载，可直接前往 B 站观看游戏简介视频。</span>
+            <a
+              href="https://www.bilibili.com/video/BV1pmduBqEsT/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-[#7d6b45]/30 px-5 py-2 text-[#4b4a37] transition hover:bg-[#f7efd8]/70"
+            >
+              打开 B 站视频
+            </a>
+          </div>
+        </div>
+      </FadeIn>
+    </Section>
+  );
+}
+
 function Intro() {
   const cards = [
     ["游戏类型", "2D 横版剧情解谜", "以探索、互动、线索收集和情绪叙事推动流程。"],
@@ -757,6 +796,7 @@ export default function SanYueChuQiShowcasePage() {
       <AmbientBackdrop />
       <FloatingNav />
       <Hero />
+      <TrailerSection />
       <Intro />
       <Mechanics />
       <ArtDirection />
